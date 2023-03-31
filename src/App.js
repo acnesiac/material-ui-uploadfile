@@ -1,11 +1,11 @@
-import React from "react";
-import "./App.css";
-import { Typography } from "@material-ui/core";
+
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
-    <div className="container">
-     
+    <div>
+            <Dashboard></Dashboard>
+
     </div>
   );
 }
