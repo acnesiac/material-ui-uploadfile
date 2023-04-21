@@ -21,13 +21,14 @@ export const mainListItems = (
       <ListItemText primary="Dashboard" />
     </ListItemButton>
     </Link>
+    <Link to={'/'} className="nav-link">
     <ListItemButton>
       <ListItemIcon>
         <ShoppingCartIcon />
       </ListItemIcon>
       <ListItemText primary="Orders" />
     </ListItemButton>
-    
+    </Link>
   </React.Fragment>
 );
 
