@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useTheme } from '@mui/material/styles';
 import { LineChart, Line, XAxis, YAxis, Label, ResponsiveContainer } from 'recharts';
 import Title from './Title';
+import { Alert } from '@mui/material';
 
 // Generate Sales Data
 function createData(time, amount) {
@@ -25,7 +26,10 @@ export default function Page2() {
 
   return (
     <React.Fragment>
-      2
+      <Alert severity="error">This is an error alert — check it out!</Alert>
+<Alert severity="warning">This is a warning alert — check it out!</Alert>
+<Alert severity="info">This is an info alert — check it out!</Alert>
+<Alert severity="success">This is a success alert — check it out!</Alert>
     </React.Fragment>
   );
 }
