@@ -18,16 +18,19 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
-import Chart from './Chart';
+import Chart from './Page1';
 import Deposits from './Deposits';
 import Orders from './Orders';
+import Main from './Main';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      {'Lennar © '}
+      <Link color="inherit" href="https://www.lennar.com/">
+      www.lennar.com
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -127,6 +130,8 @@ function DashboardContent() {
             </IconButton>
           </Toolbar>
         </AppBar>
+
+        <Router>
         <Drawer variant="permanent" open={open}>
           <Toolbar
             sx={{
@@ -158,13 +163,16 @@ function DashboardContent() {
             overflow: 'auto',
           }}
         >
+          
+
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             
-             
+          <Main></Main>
             <Copyright sx={{ pt: 4 }} />
           </Container>
         </Box>
+        </Router>
       </Box>
     </ThemeProvider>
   );

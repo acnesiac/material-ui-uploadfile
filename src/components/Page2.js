@@ -20,12 +20,12 @@ const data = [
   createData('24:00', undefined),
 ];
 
-export default function Chart() {
+export default function Page2() {
   const theme = useTheme();
 
   return (
     <React.Fragment>
-      
+      2
     </React.Fragment>
   );
 }
