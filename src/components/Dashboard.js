@@ -21,7 +21,6 @@ import { mainListItems, secondaryListItems } from './listItems';
 import Chart from './Page1';
 import Deposits from './Deposits';
 import Orders from './Orders';
-import Main from './Main';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -168,7 +167,6 @@ function DashboardContent() {
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             
-          <Main></Main>
             <Copyright sx={{ pt: 4 }} />
           </Container>
         </Box>
