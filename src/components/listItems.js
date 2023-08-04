@@ -10,6 +10,15 @@ import { Link } from "react-router-dom";
 
 export const mainListItems = (
   <React.Fragment>
+
+    <Link to={"/page3"} className="nav-link">
+      <ListItemButton>
+        <ListItemIcon>
+          <ShoppingCartIcon />
+        </ListItemIcon>
+        <ListItemText primary="Orders" />
+      </ListItemButton>
+    </Link>
     <Link to={"/create-student"} className="nav-link">
       <ListItemButton>
         <ListItemIcon>
@@ -26,6 +35,7 @@ export const mainListItems = (
         <ListItemText primary="Orders" />
       </ListItemButton>
     </Link>
+   
   </React.Fragment>
 );
 
