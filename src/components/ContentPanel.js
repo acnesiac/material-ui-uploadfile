@@ -5,6 +5,7 @@ import Title from './Title';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Page1 from './Page1';
 import Page2 from './Page2';
+import Page3 from './Page3';
 
 
 export default function Main() {
@@ -25,6 +26,11 @@ export default function Main() {
               exact
               path="/create-student"
               component={(props) => <Page2 {...props} />}
+            />
+            <Route
+              exact
+              path="/page3"
+              component={(props) => <Page3 {...props} />}
             />
           </Switch>
         </div>
